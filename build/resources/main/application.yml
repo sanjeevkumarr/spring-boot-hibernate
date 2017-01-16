@@ -1,0 +1,23 @@
+## YAML Template.
+---
+spring:
+     # Datasource Configuration
+     datasource:
+         driverClassName: com.mysql.jdbc.Driver
+         url: "jdbc:mysql://${DB_HOST:172.16.31.50}:${DB_PORT:3306}/${DB_NAME:sample_db}"
+         username: "${DB_USERNAME:root}"
+         password: "${DB_PASSWORD:1234}"
+     jpa:         
+         database: MYSQL
+         show-sql: true
+         hibernate:             
+             ddl-auto: create
+             naming-strategy: "org.hibernate.cfg.ImprovedNamingStrategy"
+             dialect: "org.hibernate.dialect.MySQL5Dialect"   
+                 
+             
+         
+     
+         
+
+     
