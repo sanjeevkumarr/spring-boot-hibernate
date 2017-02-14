@@ -23,13 +23,6 @@ import org.springframework.boot.autoconfigure.web.ResourceProperties;
 @Table(name ="user")
 public class User {
     
-    
-    public User(Long id , String name) {
-            this.id = id;
-            this.name = name;
-    }
-    
-    
     private String name;
     
     
